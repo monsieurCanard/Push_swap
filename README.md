@@ -1,13 +1,14 @@
-![banner](https://github.com/monsieurCanard/monsieurCanard/blob/main/covers/cover-.png?raw=true)
+
+![PushSwap](https://github.com/user-attachments/assets/22478562-10ef-45eb-ac47-2463ef3988f3)
 
 ## Description
 
 The aim of the project is to develop an sorting algorithm with a limited set of operations.
-We only have use only two stacks and 4 differents moves like push, swap, rotate, reverse rotate.
-My algorithm is quite simple :
--Count each move necessary to place each number in the right position.
--Compare and choose the cheapest one
--Place the chosen one
+We only have use only two stacks and 4 differents moves like push, swap, rotate, reverse rotate.<br>
+My algorithm is quite simple : <br> <br>
+-Count each move necessary to place each number in the right position.<br><br>
+-Compare and choose the cheapest one <br><br>
+-Place the chosen one <br><br>
 
 ## Usage
 
