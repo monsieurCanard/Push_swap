@@ -28,7 +28,7 @@ or
 The bonus part consists of coding a checker that we can use for check the return of push_swap programme.
 It takes the return of the push_swap program, applies it and checks if the final stack is sorted or not.  
 
-# Usage
+### Bonus usage
 ```
 arg="number1, number2"; ./push_swap $arg | ./checker $arg
 ```
