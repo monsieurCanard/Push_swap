@@ -1,36 +1,36 @@
 
 ![PushSwap](https://github.com/user-attachments/assets/22478562-10ef-45eb-ac47-2463ef3988f3)
+# Push_swap
 
-## Description
+An algorithmic C project that sorts a stack of integers using a limited set of operations, aiming to minimize the number of moves. Includes a bonus **checker** utility to validate operation sequences.
 
-The aim of the project is to develop an sorting algorithm with a limited set of operations.
-We only have use only two stacks and 4 differents moves like push, swap, rotate, reverse rotate.<br>
-My algorithm is quite simple : <br> <br>
--Count each move necessary to place each number in the right position.<br><br>
--Compare and choose the cheapest one <br><br>
--Place the chosen one <br><br>
+## Project Structure
+
+- `push_swap` – Main program: determines and prints the shortest sequence of operations to sort stack A.
+- `checker` (bonus) – Reads a sequence of operations from stdin, applies them to the provided stack, and checks if the result is sorted.
+- `Makefile` – Controls compilation with targets:
+  - `all`, `clean`, `fclean`, `re` (mandatory)
+  - `bonus` for building the checker and any additional headers/modules
+- Source files (`*.c`, `*.h`) – Modularized design, no global variables, strict memory handling.
 
 ## Usage
 
-```
-git clone https://github.com/monsieurCanard/Push_swap.git
-```
+```bash
+# Clone the repository
+git clone https://github.com/monsieurCanard/Push_swap
+cd push_swap
 
-```
-./push_swap "number1, number2, number3, ..."
-```
-or
-```
-./push_swap number1 number2 number3 ...
-```
+# Build the main program
+make
 
-## Bonus part
+# Example sorting
+./push_swap 4 67 3 87 23
+# Outputs a sequence of operations to stdout
 
-The bonus part consists of coding a checker that we can use for check the return of push_swap programme.
-It takes the return of the push_swap program, applies it and checks if the final stack is sorted or not.  
+# Build bonus checker
+make bonus
 
-### Bonus usage
-```
-arg="number1, number2"; ./push_swap $arg | ./checker $arg
-```
-If it returns OK, your stack is sorted.
+# Validate outputs
+ARG="4 67 3 87 23"
+./push_swap $ARG | ./checker $ARG
+# Output: OK (if sorting is correct)
